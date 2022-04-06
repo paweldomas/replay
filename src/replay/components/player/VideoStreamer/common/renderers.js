@@ -13,6 +13,7 @@ export const renderWithoutSource: VideoStreamerRenderer = (
   videoElementEventHandlers,
   props,
   baseClassName,
+  autoPlay,
   playsInline,
   textTracks,
   style
@@ -21,7 +22,7 @@ export const renderWithoutSource: VideoStreamerRenderer = (
   const classNames = prefixClassNames(classNamePrefix, baseClassName, className);
   return (
     <video
-      autoPlay={true}
+      autoPlay={typeof autoPlay !== 'undefined' ? autoPlay : true}
       controls={false}
       style={style}
       className={classNames}
@@ -38,6 +39,7 @@ export const renderWithSource: VideoStreamerRenderer = (
   videoElementEventHandlers,
   props,
   baseClassName,
+  autoPlay,
   playsInline,
   textTracks,
   style
@@ -48,7 +50,7 @@ export const renderWithSource: VideoStreamerRenderer = (
   if (streamUrl) {
     return (
       <video
-        autoPlay={true}
+        autoPlay={typeof autoPlay !== 'undefined' ? autoPlay : true}
         controls={false}
         style={style}
         className={classNames}
