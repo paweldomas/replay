@@ -22,7 +22,7 @@ export const renderWithoutSource: VideoStreamerRenderer = (
   const classNames = prefixClassNames(classNamePrefix, baseClassName, className);
   return (
     <video
-      autoPlay={typeof autoPlay !== 'undefined' ? autoPlay : true}
+      autoPlay={autoPlay}
       controls={false}
       style={style}
       className={classNames}
@@ -50,7 +50,7 @@ export const renderWithSource: VideoStreamerRenderer = (
   if (streamUrl) {
     return (
       <video
-        autoPlay={typeof autoPlay !== 'undefined' ? autoPlay : true}
+        autoPlay={autoPlay}
         controls={false}
         style={style}
         className={classNames}

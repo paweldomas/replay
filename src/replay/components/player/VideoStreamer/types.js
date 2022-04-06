@@ -178,6 +178,7 @@ export type VideoStreamerConfiguration = {
   logLevel?: 'NONE' | 'ERROR' | 'WARNING' | 'INFO' | 'DEBUG' | 'VERBOSE',
   defaultBandwidth?: ?number,
   crossOrigin?: ?string,
+  autoPlay?: ?boolean,
   playsInline?: ?boolean,
   liveEdgeMargin?: ?number,
   pauseUpdateInterval?: ?number

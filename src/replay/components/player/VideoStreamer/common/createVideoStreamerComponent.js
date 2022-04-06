@@ -187,7 +187,11 @@ function createVideoStreamerComponent<C: VideoStreamerConfiguration, P: VideoStr
         !this.props.configuration ||
         this.props.configuration.playsInline == null ||
         this.props.configuration.playsInline;
-      return render(videoRef, videoElementEventHandlers, this.props, baseClassName, playsInline, trackElementData);
+      const autoPlay =
+        !this.props.configuration ||
+          this.props.configuration.autoPlay == null ||
+          this.props.configuration.autoPlay;
+      return render(videoRef, videoElementEventHandlers, this.props, baseClassName, autoPlay, playsInline, trackElementData);
     }
   }
 
