@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/html.js"],"names":["HtmlVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,0B","sourcesContent":["// @flow\nimport HtmlVideoStreamer from '../components/player/VideoStreamer/HtmlVideoStreamer/HtmlVideoStreamer';\nexport default HtmlVideoStreamer;\n"],"file":"html.js"}

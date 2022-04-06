@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/mock.js"],"names":["MockVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,0B","sourcesContent":["// @flow\nimport MockVideoStreamer from '../components/player/VideoStreamer/MockVideoStreamer';\nexport default MockVideoStreamer;\n"],"file":"mock.js"}
