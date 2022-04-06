@@ -45,6 +45,7 @@ export type VideoStreamerRenderer = (
   videoElementEventHandlers: { [string]: (any) => void },
   props: { source?: ?PlaybackSource, className?: string, classNamePrefix?: string },
   baseClassName: string,
+  autoPlay: boolean,
   playsInline: boolean,
   textTracks?: ?Array<TrackElementData>,
   styles?: any

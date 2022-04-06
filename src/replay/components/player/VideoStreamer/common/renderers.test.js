@@ -15,6 +15,7 @@ test('renderWithoutSource()', () => {
       { className: 'my-video' },
       'my-base-class-name',
       false,
+        false,
       [],
       {
         c: 3
@@ -40,7 +41,8 @@ test('renderWithoutSource() with source specified.', () => {
       { onPlaying: 1, onError: 2 },
       { source: { streamUrl: 'http://example.com' }, className: 'my-video' },
       'my-base-class-name',
-      true,
+      false,
+        true,
       [],
       { c: 3 }
     )
@@ -51,6 +53,7 @@ test('renderWithoutSource() with source specified.', () => {
   expect(videoElement.prop('src')).toBe('http://example.com');
   expect(videoElement.prop('style')).toEqual({ c: 3 });
   expect(videoElement.prop('onPlaying')).toEqual(1);
+  expect(videoElement.prop('autoPlay')).toBe(false);
   expect(videoElement.prop('playsInline')).toBe(true);
   expect(videoElement.prop('onError')).toEqual(2);
 
@@ -73,6 +76,7 @@ test('renderWithoutSource() with source and text track data specified.', () => {
       { source: { streamUrl: 'http://example.com' }, className: 'my-video' },
       'my-base-class-name',
       false,
+        false,
       [
         { src: 'abc.vtt', srclang: 'de', label: 'Deutsch', kind: 'subtitles', onRef: () => {} },
         { src: 'def.vtt', srclang: 'da', label: 'Dansk', kind: 'captions', onRef: () => {} }
@@ -102,6 +106,7 @@ test('renderWithoutSource() with no source specified.', () => {
       { className: 'my-video' },
       'my-base-class-name',
       false,
+        false,
       [],
       {
         c: 3
