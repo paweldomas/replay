@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/rx-player.js"],"names":["RxVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,wB","sourcesContent":["// @flow\nimport RxVideoStreamer from '../components/player/VideoStreamer/RxVideoStreamer/RxVideoStreamer';\nexport default RxVideoStreamer;\n"],"file":"rx-player.js"}

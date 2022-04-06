@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/shaka-player.js"],"names":["ShakaVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,2B","sourcesContent":["// @flow\nimport ShakaVideoStreamer from '../components/player/VideoStreamer/ShakaVideoStreamer/ShakaVideoStreamer';\nexport default ShakaVideoStreamer;\n"],"file":"shaka-player.js"}

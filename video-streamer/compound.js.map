@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/compound.js"],"names":["CompoundVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,8B","sourcesContent":["// @flow\nimport CompoundVideoStreamer from '../components/player/VideoStreamer/CompoundVideoStreamer/CompoundVideoStreamer';\nexport default CompoundVideoStreamer;\n"],"file":"compound.js"}

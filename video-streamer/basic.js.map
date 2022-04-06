@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/replay/video-streamer/basic.js"],"names":["BasicVideoStreamer"],"mappings":";;;;;;;AACA;;;;eACeA,2B","sourcesContent":["// @flow\nimport BasicVideoStreamer from '../components/player/VideoStreamer/BasicVideoStreamer/BasicVideoStreamer';\nexport default BasicVideoStreamer;\n"],"file":"basic.js"}

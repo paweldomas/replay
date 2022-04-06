@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/replay/version.js"],"names":["version","e"],"mappings":";;;;;;AAAA,IAAIA,OAAO,GAAG,OAAd;;AACA,IAAI;AACFA,EAAAA,OAAO,UAAP,CADE,CACqB;AACxB,CAFD,CAEE,OAAOC,CAAP,EAAU,CAAE;;eACCD,O","sourcesContent":["let version = '0.0.0';\ntry {\n  version = __VERSION__; // eslint-disable-line no-undef\n} catch (e) {}\nexport default version;\n"],"file":"version.js"}
