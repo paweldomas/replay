@@ -172,7 +172,8 @@ function createVideoStreamerComponent(name, resolveImplementation) {
             render = _this$state.render,
             trackElementData = _this$state.trackElementData;
       const playsInline = !this.props.configuration || this.props.configuration.playsInline == null || this.props.configuration.playsInline;
-      return render(videoRef, videoElementEventHandlers, this.props, baseClassName, playsInline, trackElementData);
+      const autoPlay = !this.props.configuration || this.props.configuration.autoPlay == null || this.props.configuration.autoPlay;
+      return render(videoRef, videoElementEventHandlers, this.props, baseClassName, autoPlay, playsInline, trackElementData);
     }
 
   }

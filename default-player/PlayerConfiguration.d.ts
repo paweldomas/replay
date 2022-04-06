@@ -22,7 +22,6 @@ export interface VideoStreamerConfiguration {
   logLevel?: 'NONE' | 'ERROR' | 'WARNING' | 'INFO' | 'DEBUG' | 'VERBOSE',
   defaultBandwidth?: number | null,
   crossOrigin?: string | null,
-  autoPlay?: boolean | null,
   playsInline?: boolean | null,
   liveEdgeMargin?: number | null,
   pauseUpdateInterval?: number | null

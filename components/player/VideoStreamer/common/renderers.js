@@ -33,12 +33,12 @@ React.createElement("track", {
   ref: onRef
 });
 
-const renderWithoutSource = (videoRef, videoElementEventHandlers, props, baseClassName, playsInline, textTracks, style) => {
+const renderWithoutSource = (videoRef, videoElementEventHandlers, props, baseClassName, autoPlay, playsInline, textTracks, style) => {
   const className = props.className,
         classNamePrefix = props.classNamePrefix;
   const classNames = (0, _common.prefixClassNames)(classNamePrefix, baseClassName, className);
   return /*#__PURE__*/React.createElement("video", _extends({
-    autoPlay: true,
+    autoPlay: autoPlay,
     controls: false,
     style: style,
     className: classNames,
@@ -49,7 +49,7 @@ const renderWithoutSource = (videoRef, videoElementEventHandlers, props, baseCla
 
 exports.renderWithoutSource = renderWithoutSource;
 
-const renderWithSource = (videoRef, videoElementEventHandlers, props, baseClassName, playsInline, textTracks, style) => {
+const renderWithSource = (videoRef, videoElementEventHandlers, props, baseClassName, autoPlay, playsInline, textTracks, style) => {
   const className = props.className,
         classNamePrefix = props.classNamePrefix,
         source = props.source;
@@ -58,7 +58,7 @@ const renderWithSource = (videoRef, videoElementEventHandlers, props, baseClassN
 
   if (streamUrl) {
     return /*#__PURE__*/React.createElement("video", _extends({
-      autoPlay: true,
+      autoPlay: autoPlay,
       controls: false,
       style: style,
       className: classNames,
